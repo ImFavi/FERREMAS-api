@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestión de Productos</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <h1>Gestión de Productos</h1>
+
+  <h3>Agregar nuevo producto</h3>
+  <div id="mensaje" style="color: red; margin: 0.5em 0;"></div>
+  <input id="nombre" placeholder="Nombre" />
+  <input id="precio" type="number" placeholder="Precio" />
+  <input id="stock" type="number" placeholder="Stock" />
+  <button onclick="agregarProducto()">Agregar</button>
+
+  <h3>Lista de productos</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Nombre</th><th>Precio</th><th>Stock</th><th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-productos"></tbody>
+  </table>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
